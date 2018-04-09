@@ -36,9 +36,41 @@ feats:
 spells:
   book:
     level 0:
-      - TODO
+      - Hébétement
+      - Détection de la magie
+      - Détection du poison
+      - Lecture de la magie
+      - Résistance
+      - Brise (Blog)
+      - Illumination
+      - Etincelles (APG)
+      - Lumière
+      - Lumières dansantes
+      - Pénombre
+      - Rayon de givre
+      - Scoop (Blog)
+      - Aspect de fée hantée (UC)
+      - Son imaginaire
+      - Aspersion acide
+      - Détremper
+      - Destruction de mort-vivant
+      - Fatigue
+      - Saignement
+      - Choc (Blog)
+      - Manipulation à distance
+      - Message
+      - Ouverture/fermeture
+      - Racine (Blog)
+      - Réparation
+      - Prestidigitation
+      - Signature Magique
     level 1:
-      - TBD
+      - Charme-personne
+      - Déguisement
+      - Armure de mage
+      - Projectile magique
+      - Feuille morte
+      - Frayeur
   prepared:
     0: 4 - 1
     1: 2 - 1
