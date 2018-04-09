@@ -1,0 +1,69 @@
+---
+name:
+race: Changelin
+class: Arcaniste
+archetype: Agent Etrange
+level: 1
+HP: 6
+movement: 9m (4 cases)
+characteristics:
+  str: 6
+  dex: 10
+  con: 11
+  int: 17
+  wis: 16
+  cha: 16
+abilities:
+  racial:
+    - veuve verte (+2 bluff vs personnages sexuallement compatibles)
+    - vision dans le noir 18m
+    - griffes (1d4/x2)
+    - armure naturelle +1
+  class:
+    - "- 1 sort prepare / niveau (Agent Etrange niv 1)"
+    - "+ 1 sort par jour / niveau (Agent Etrange niv 1)"
+    - reservoir arcanique
+    - tours de magie
+    - absorption de sorts
+    - grimoire
+    - exploitations_arcaniques:
+      - glissement dimensionnel
+traits:
+  - TBD
+  - chouchou du professeur Lorrimor
+feats:
+  - vue fantôme
+spells:
+  book:
+    level 0:
+      - TODO
+    level 1:
+      - TBD
+  prepared:
+    0: 4 - 1
+    1: 2 - 1
+  per_day:
+    0: N/A
+    1: 2 + 1 + 1
+skills:
+  ranks:
+    spellcraft: 1
+    bluff: 1
+    disguise: 1
+    knowledge(arcana) : 1
+  miscellaneous:
+    - "+2 bluff vs sexually compatible"
+saving_throws:
+  quickness: 0 (0 + 0)
+  resistance: 0 (0 + 0)
+  willpower: 5 (2 + 3)
+combat:
+  initiative: 0
+  AC: 11
+  contact: 10
+  surprised: 11
+  BMO: -2 (-2 + 0)
+  DMD: 8 (-2 + 0 + 10)
+languages:
+  - balok
+  - tespestan

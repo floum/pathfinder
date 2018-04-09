@@ -1,0 +1,17 @@
+!!!5
+%html
+  %head
+    %meta{ charset: 'utf-8' }
+    %title= character.name
+  %body
+    #name= character.name
+    #race= "#{i18n(:race).capitalize} : #{character.race}"
+    #caste= "#{i18n(:caste).capitalize} : #{character.caste}"
+    #archetype= "#{i18n(:archetype).capitalize} : #{character.archetype}"
+    #level= "#{i18n(:level).capitalize} : #{character.level}"
+    #hit_points= "#{i18n(:hit_points).capitalize} : #{character.hit_points}"
+    #movement= "#{i18n(:movement).capitalize} : #{character.movement}"
+    #characteristics
+      - CHARACTERISTICS.each do |characteristic|
+        .div{ id: characteristic }
+          = "#{i18n(characteristic).capitalize} : #{character.send(characteristic)}"

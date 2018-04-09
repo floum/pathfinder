@@ -1,0 +1,31 @@
+---
+level:
+  fr: niveau
+  en: level
+caste:
+  fr: classe
+  en: class
+archetype:
+  fr: archétype
+  en: archetype
+race:
+  fr: race
+  en: race
+hit_points:
+  fr: points de vie
+skills:
+  fr: compétences
+  en: skills
+movement:
+  fr: mouvement
+  en: movement
+characteristics:
+  fr: caractéristiques
+strength:
+  fr: force
+dexterity:
+  fr: dextérité
+wisdom:
+  fr: sagesse
+charisma:
+  fr: charisme

@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+# vi : set ft=ruby
+
+require 'thor'
+require 'pathfinder'
+include Pathfinder
+
+class PathfinderCLI < Thor
+  desc 'character_sheet', 'render a character sheet from a YAML'
+  option :language
+  def character_sheet(character_file, sheet = nil)
+    language = options[:language] || 'en'
+    character_yaml = File.read(character_file)
+    character = Character.from_yaml(character_yaml)
+    
+    result = CharacterView.new(character: character, language: language).render
+    if sheet
+      open(sheet, 'w') do |s|
+        s.write result
+      end
+    else
+      p result
+    end
+  end
+end
+
+PathfinderCLI.start(ARGV)
