@@ -6,14 +6,13 @@ require 'pathfinder'
 include Pathfinder
 
 class PathfinderCLI < Thor
-  desc 'character_sheet', 'render a character sheet from a YAML'
-  option :language
+  desc 'character_sheet CHARACTER_YAML_FILE [CHARACTER_HTML_FILE]', 'render a character sheet from a YAML'
+  option :language, aliases: ['-l'], default: 'en'
   def character_sheet(character_file, sheet = nil)
-    language = options[:language] || 'en'
     character_yaml = File.read(character_file)
     character = Character.from_yaml(character_yaml)
     
-    result = CharacterView.new(character: character, language: language).render
+    result = CharacterView.new(character: character, language: options[:language]).render
     if sheet
       open(sheet, 'w') do |s|
         s.write result
