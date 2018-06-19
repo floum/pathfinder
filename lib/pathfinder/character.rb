@@ -53,6 +53,10 @@ module Pathfinder
       end
     end
 
+    def initiative
+      @combat.fetch('initiative') { {} }
+    end
+
     def spellbook
       @spells.fetch('book') { {} }
     end
